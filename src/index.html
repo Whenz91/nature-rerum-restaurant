@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Natura Rerum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <span class="main-nav__logo"><a href="#">Natura Rerum</a></span>
+        <ul class="main-nav__list">
+            <li class="main-nav__items"><a href="#" class="main-nav__link">Rólunk</a></li>
+            <li class="main-nav__items"><a href="#" class="main-nav__link">Étlap</a></li>
+            <li class="main-nav__items"><a href="#" class="main-nav__link">Események</a></li>
+            <li class="main-nav__items"><a href="#" class="main-nav__link">Recept ajánló</a></li>
+            <li class="main-nav__items"><a href="#" class="main-nav__link">Kapcsolat</a></li>
+        </ul>
+        <a href="#" class="btn-link btn-primary">Asztal foglalás</a>
+    </nav>
+
+    <header class="hero grid-two-columon-layot">
+        <div class="hero__description">
+            <h1 class="title">Natura Rerum</h1>
+            <p class="lead">Az igazi ínyencségek tárháza</p>
+
+            <p>Nehagyd ki a legfinobb ételeinket, amelyek mellé természetesen többféle bor és sör különlegességeink közzül válogathatsz ínycsiklandozó kisérőket. Osszd meg az evés fenséges hangulatát pároddal, családoddal vagy barátaiddal foglalj nálunk asztalt még ma.</p>
+
+            <div class="button-group">
+                <a href="#" class="btn-link btn-primary">Asztal foglalás</a>
+                <a href="#" class="btn-link btn-secondary">Étlap</a>
+            </div>
+        </div>
+        <div class="hero__image">
+            <img src="https://images.unsplash.com/photo-1463183547458-6a2c760d0912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Terített asztal" class="shadow">
+        </div>
+    </header>
+
+    <main>
+        <section class="about grid-two-columon-layot">
+            <div class="about__images">
+                <figcaption class="about__images__first-img shadow">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="Bár">
+                    <figure>Natura Rerum pult</figure>
+                </figcaption>
+                <figcaption class="about__images__second-img shadow">
+                    <img src="https://images.unsplash.com/photo-1526234362653-3b75a0c07438?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="Étterem">
+                    <figure>Natura Rerum étterem</figure>
+                </figcaption>
+            </div>
+
+            <div class="about__description">
+                <p class="sub-title">Rólunk</p>
+                <h2>Mi is az a Natura Rerum?</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex eum libero illo. Placeat officia culpa molestias in cum minus quae assumenda animi minima, harum consequuntur, neque, temporibus inventore magni.</p>
+
+                <a href="#" class="link">Ismerd meg a teljes történetünk</a>
+            </div>
+        </section>
+
+        <section class="menu">
+            <p class="sub-title">Étlap</p>
+            <h2>Ma mit ennél a legszívesebben?</h2>
+
+            <div class="tab-nav">
+                <button class="tab-nav__link active" data-id="starters">Előételek</button>
+                <button class="tab-nav__link" data-id="soups">Levesek</button>
+                <button class="tab-nav__link" data-id="maindish">Főételek</button>
+                <button class="tab-nav__link" data-id="desserts">Deszertek</button>
+            </div>
+
+            <!-- Starters tab-->
+            <div id="starters" class="tabcontent active">
+                <div class="card-deck">
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="csirkés saláta" class="card__img">
+    
+                        <div class="card__content">
+    
+                            <h3 class="card__title">Csirkés saláta</h3>
+    
+                            <p class="price">500 Ft</p>
+                            
+                            <p class="ingredients">csirkemell/ rukkola/ vörös saláta/ retek/ lilahagyma/ madár saláta/ köles/ só/ bors/ kenyérkocka</p>
+                            
+                            <p class="tags"><a href="#" class="tag-link">Csirke ételek</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Soups tab-->
+            <div id="soups" class="tabcontent">
+                <div class="card-deck">
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1552298013-de2af4b94854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="babgulyás leves" class="card__img">
+    
+                        <div class="card__content">
+    
+                            <h3 class="card__title">Babgulyás leves</h3>
+    
+                            <p class="price">1500 Ft</p>
+
+                            <p class="ingredients">marhahús/ bab/ vörös hagyma/ répa/ piros paprika/ fűszerek/ só/ bors</p>
+                            
+                            <p class="tags"><a href="#" class="tag-link">Marha ételek</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Maindish tab-->
+            <div id="maindish" class="tabcontent">
+                <div class="card-deck">
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="fűszeres lazac filé" class="card__img">
+    
+                        <div class="card__content">
+    
+                            <h3 class="card__title">Fűszeres lazac filé</h3>
+    
+                            <p class="price">2800 Ft</p>
+
+                            <p class="ingredients">lazac/ citrom/ curry/ tejszín/ vörös hagyma/ kakúkfű/ só/ bors</p>
+                            
+                            <p class="tags"><a href="#" class="tag-link">Halételek</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Desserts tab-->
+            <div id="desserts" class="tabcontent">
+                <div class="card-deck">
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="ház epres joghurt" class="card__img">
+    
+                        <div class="card__content">
+    
+                            <h3 class="card__title">Házi epres joghurt</h3>
+    
+                            <p class="price">800 Ft</p>
+
+                            <p class="ingredients">eper/ joghurt/ méz/ menta</p>
+                            
+                            <p class="tags"><a href="#" class="tag-link">Gyümölcsös desszertek</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testemonials">
+            <div class="testemonial">
+                <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="ember 1" class="testemonial__img">
+                <p class="testemonial__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, quia eius. Accusamus sequi quos repellendus sint, eaque quaerat dolorum dicta beatae temporibus voluptatum vero hic. Adipisci temporibus mollitia ab excepturi.
+                </p>
+                <p class="testemonial__name">Joe Fillpo</p>
+            </div>
+
+            <div class="testemonial">
+                <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="ember 1" class="testemonial__img">
+                <p class="testemonial__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, quia eius. Accusamus sequi quos repellendus sint, eaque quaerat dolorum dicta beatae temporibus voluptatum vero hic. Adipisci temporibus mollitia ab excepturi.
+                </p>
+                <p class="testemonial__name">Minta Károly</p>
+            </div>
+
+            <div class="testemonial">
+                <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="ember 1" class="testemonial__img">
+                <p class="testemonial__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, quia eius. Accusamus sequi quos repellendus sint, eaque quaerat dolorum dicta beatae temporibus voluptatum vero hic. Adipisci temporibus mollitia ab excepturi.
+                </p>
+                <p class="testemonial__name">Kedves Szandra</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
