@@ -200,29 +200,47 @@
         </section>
 
         <section id="reservation" class="grid-two-columon-layot">
-            <form action="" method="post" class="table-reservation">
+            <form action="" method="post" id="reservationForm" class="table-reservation validate">
                 <p class="sub-title">Asztalfoglalás</p>
                 <h2>Foglaj helyet nálunk.</h2>
                 <div class="input-group">
                     <label for="reservationDate" class="input-group__label">Időpont</label>
-                    <input type="time" name="reservationDate" id="reservationDate" class="input-group__input">
+                    <input type="time" name="reservationDate" id="reservationDate" class="input-group__input" required>
                 </div>
                 <div class="input-group">
                     <label for="peopleNumber" class="input-group__label">Személyek száma</label>
-                    <input type="number" name="peopleNumber" id="peopleNumber" class="input-group__input">
+                    <input type="number" name="peopleNumber" id="peopleNumber" class="input-group__input" min="2" max="12" pattern="[-+]?[0-9]" required>
                 </div>
                 <div class="input-group">
                     <label for="name" class="input-group__label">Teljes név</label>
-                    <input type="text" name="name" id="name" class="input-group__input">
+                    <input type="text" name="name" id="name" class="input-group__input" required>
                 </div>
                 <div class="input-group">
                     <label for="email" class="input-group__label">Email cím</label>
-                    <input type="email" name="email" id="email" class="input-group__input">
+                    <input type="email" name="email" id="email" class="input-group__input" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" required>
                 </div>
                 <button type="submit">Asztalfoglalása</button>
             </form>
 
             <img src="https://images.unsplash.com/photo-1510523293781-b2cd54eaeac0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="asztalfoglalás" class="hero__image">
+        </section>
+
+        <section id="events">
+            <div class="card-deck">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1561912774-79769a0a0a7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="csirkés saláta" class="card__img">
+
+                    <div class="card__content">
+
+                        <h3 class="card__title">V. Tavasz köszöntő este</h3>
+
+                        <p>Immár ötödik alkalommal rendezzük meg a tavasz köszöntő estünket.</p>
+
+                        <a href="#" class="link">További részletek</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
