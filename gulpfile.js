@@ -1,6 +1,7 @@
 const { watch, series } = require('gulp');
 const { src, dest } = require('gulp');
 const sass = require('gulp-sass');
+const concat = require('gulp-concat');
 
 function transpile() {
     return src('src/*.html').pipe(dest('public'));
@@ -15,7 +16,9 @@ function cssTranspile(cb) {
 }
 
 function jsTranspile() {
-    return src('src/js/*.js').pipe(dest('public/js'));
+    return src('src/js/*.js')
+        .pipe(concat('main.js'))
+        .pipe(dest('public/js'));
 }
 
 // a figyelés a gulp parancssal inditható a terminálban
