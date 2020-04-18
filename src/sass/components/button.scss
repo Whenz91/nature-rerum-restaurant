@@ -1,10 +1,14 @@
+@import "../abstracts/variables.scss";
 .btn-link {
     text-decoration: none;
     padding: 10px 15px;
 }
-.button-group > .btn-link:nth-child(1) {
-    margin-right: 15px;
+.button-group {
+    .btn-link:nth-child(1) {
+        margin-right: 15px;
+    }
 }
+    
 .btn-primary {
     color: $secondary-text-color;
     border: 1px solid $accent-color;
@@ -25,4 +29,16 @@
     font-size: 1em;
     font-weight: 700;
     margin-right: 10px;
+}
+@media screen and (max-width: 425px) {
+    .button-group {
+        .btn-link {
+            display: block;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .btn-link:nth-child(1) {
+            margin: 0 auto 15px;
+        }
+    }
 }

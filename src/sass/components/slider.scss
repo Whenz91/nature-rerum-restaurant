@@ -1,3 +1,4 @@
+@import "../abstracts/variables.scss";
 .wraper {
     position: relative;
 }
@@ -43,4 +44,12 @@
     border-color: transparent transparent transparent $dark-gary;
     right: 0;
     margin-right: 15px;
+}
+@media screen and (max-width: 425px) {
+    .slider {
+        min-height: 450px;
+    }
+    .arrow {
+        top: 20%;
+    }
 }

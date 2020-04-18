@@ -24,3 +24,14 @@ figure {
     font-size: 1.2em;
     font-weight: 300;
 }
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .lead {
+        font-size: 1.8em;
+    }
+}

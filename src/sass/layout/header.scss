@@ -1,25 +1,13 @@
+@import "../abstracts/variables.scss";
 .hero {
-    height: 90vh;
+    min-height: 90vh;
     padding-top: 30px;
-    margin-bottom: 80px;
 
     &__description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 30px;
-
-        .title {
-            margin-bottom: 15px;
-        }
-
-        .lead {
-            margin-bottom: 50px;
-        }
-
-        p {
-            margin-bottom: 50px;
-        }
     }
 
     &__image {
@@ -31,5 +19,19 @@
             max-height: 100%;
             margin: 0 auto;
         }
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+
+        &__image {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero {
+       text-align: center;
     }
 }

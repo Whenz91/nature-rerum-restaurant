@@ -1,3 +1,24 @@
 .shadow {
-    box-shadow: 0 0 20px $primary-text-color;
+    box-shadow: 0 0 20px rgba(32, 32, 32, 0.849);
+}
+.text-center {
+    text-align: center;
+}
+.xs-mb {
+    margin-bottom: 10px;
+}
+.sm-mb {
+    margin-bottom: 15px;
+}
+.md-mb {
+    margin-bottom: 30px;
+}
+.lg-mb {
+    margin-bottom: 50px;
+}
+.xl-mb {
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+    
 }

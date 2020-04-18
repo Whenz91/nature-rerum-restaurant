@@ -1,3 +1,4 @@
+@import "../abstracts/variables.scss";
 .main-nav {
     display: flex;
     justify-content: space-between;
@@ -11,13 +12,15 @@
         text-decoration: none;
     }
 }
-
+.sidenav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 &__list {
     list-style: none;
     display: flex;
-    :last-child {
-        margin-right: 0;
-    }
 }
 &__items {
     margin-right: 1.5em;
@@ -27,4 +30,82 @@
     color: $primary-color;
     font-size: 1.3em;
 }
+
+.mobile-menu {
+    display: none;
+
+    &__line {
+        width: 20px;
+        height: 5px;
+        margin: 5px 0;
+        background-color: $primary-color;
+        transition: 0.5s;
+    }
+}
+}
+@media screen and (max-width: 768px) {
+    .main-nav {
+        .mobile-menu {
+            display: inline-block;
+
+            &.active {
+                .mobile-menu__line:nth-child(1) {
+                    transform: rotate(45deg);
+                    transform-origin: 0 0;
+                }
+                .mobile-menu__line:nth-child(2) {
+                    transform: rotate(-45deg);
+                    transform-origin: 3px 6px;
+                }
+                .mobile-menu__line:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+        .sidenav {
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            background-color: $primary-color;
+            overflow-x: hidden;
+            transition: 0.5s;
+    
+            &.active {
+                width: 300px;
+            }
+    
+            .main-nav {
+                &__list {
+                    flex-direction: column;
+                }
+                &__items {
+                    margin: 15px 0;
+                }
+                &__link {
+                    color: $secondary-text-color;
+                }
+            }
+    
+            .btn-link {
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .main-nav {
+
+        .sidenav {
+
+            &.active {
+                width: 200px;
+            }
+        }
+    }
 }

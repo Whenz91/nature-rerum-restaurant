@@ -39,4 +39,3 @@ next.addEventListener('click', e => {
 prev.addEventListener('click', e => {
     prevSlide();
 });
-
