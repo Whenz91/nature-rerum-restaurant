@@ -1,0 +1,28 @@
+.btn-link {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.button-group > .btn-link:nth-child(1) {
+    margin-right: 15px;
+}
+.btn-primary {
+    color: $secondary-text-color;
+    border: 1px solid $accent-color;
+    background-color:$accent-color;
+}
+.btn-secondary {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+}
+.link {
+    text-decoration: underline;
+    color: $dark-primary-color;
+    font-size: 1.3em;
+}
+.tag-link {
+    text-decoration: none;
+    color: $dark-primary-color;
+    font-size: 1em;
+    font-weight: 700;
+    margin-right: 10px;
+}

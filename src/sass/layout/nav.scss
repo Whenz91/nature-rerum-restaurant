@@ -1,0 +1,30 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+
+&__logo {
+    a {
+        font-size: 2em;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+&__list {
+    list-style: none;
+    display: flex;
+    :last-child {
+        margin-right: 0;
+    }
+}
+&__items {
+    margin-right: 1.5em;
+}
+&__link {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 1.3em;
+}
+}

@@ -1,0 +1,27 @@
+.tab-nav {
+    text-align: center;
+    margin-bottom: 30px;
+
+    &__link {
+        border: 1px solid $dark-primary-color;
+        color: $secondary-text-color;
+        background-color: $dark-primary-color;
+        padding: 10px 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+
+        &.active {
+           background-color: $primary-color;
+           border: 1px solid $primary-color; 
+        }
+    }
+}
+.tabcontent {
+    display: none;
+    animation: fadeEffect 1s;
+
+    &.active {
+        display: block;
+    }
+}

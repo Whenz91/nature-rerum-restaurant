@@ -1,0 +1,35 @@
+.hero {
+    height: 90vh;
+    padding-top: 30px;
+    margin-bottom: 80px;
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+
+        .title {
+            margin-bottom: 15px;
+        }
+
+        .lead {
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__image {
+        max-height: 90vh;
+
+        img {
+            display: block;
+            width: auto;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+    }
+}

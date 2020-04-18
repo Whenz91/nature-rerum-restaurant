@@ -1,0 +1,25 @@
+.input-group {
+    margin-bottom: 25px;
+    text-align: center;
+    &__label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+    &__input {
+        border: none;
+        border-bottom: 1px solid $dark-gary;
+        font-size: 1.2em;
+        padding: 5px 10px;
+        outline: none;
+    }
+}
+.error {
+    border-color: tomato;
+}
+
+.error-message {
+    color: tomato;
+    font-style: italic;
+    margin-top: 7px;
+}
