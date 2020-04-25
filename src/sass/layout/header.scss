@@ -2,16 +2,20 @@
 .hero {
     min-height: 90vh;
     padding-top: 30px;
+    overflow: hidden;
 
     &__description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 30px;
+
+        animation: swimInLeft 2s cubic-bezier(.11,.5,.65,.31);
     }
 
     &__image {
         max-height: 90vh;
+        animation: swimInRight 2s cubic-bezier(.11,.5,.65,.31);
 
         img {
             display: block;

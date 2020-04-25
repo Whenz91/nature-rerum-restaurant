@@ -11,10 +11,16 @@
         margin-right: 15px;
         cursor: pointer;
         outline: none;
+        transition: all .2s ease-in;
 
         &.active {
            background-color: $primary-color;
            border: 1px solid $primary-color; 
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            border: 1px solid $primary-color; 
         }
     }
 }

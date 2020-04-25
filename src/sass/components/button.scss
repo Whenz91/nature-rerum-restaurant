@@ -2,8 +2,18 @@
 .btn-link {
     text-decoration: none;
     padding: 10px 15px;
+    transition: all .2s ease-in;
+    
+    &:hover {
+        transform: translateY(-2px);
+    }
+    &:active {
+        transform: translateY(0px);
+    }
 }
 .button-group {
+    display: flex;
+
     .btn-link:nth-child(1) {
         margin-right: 15px;
     }
@@ -22,6 +32,12 @@
     text-decoration: underline;
     color: $dark-primary-color;
     font-size: 1.3em;
+    transition: all .2s ease-in;
+
+    &:hover,
+    &:active {
+        color: $accent-color;
+    }
 }
 .tag-link {
     text-decoration: none;
@@ -30,8 +46,29 @@
     font-weight: 700;
     margin-right: 10px;
 }
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    color: $secondary-text-color;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all .2s ease-in;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+    &:active {
+        transform: translateY(0px);
+    }
+}
+
+
 @media screen and (max-width: 425px) {
     .button-group {
+        flex-direction: column;
         .btn-link {
             display: block;
             max-width: 300px;

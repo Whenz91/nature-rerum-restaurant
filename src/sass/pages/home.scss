@@ -7,6 +7,14 @@
     &__images {
         position: relative;
         padding: 20px;
+        transform: translateX(-90%);
+        opacity: 0;
+        transition: all 2s ease-in;
+
+        &.appear {
+            transform: translateX(0);
+            opacity: 1;
+        }
 
         figcaption {
             img {
@@ -44,6 +52,14 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 30px;
+        transform: translateX(90%);
+        opacity: 0;
+        transition: all 2s ease-in;
+
+        &.appear {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }
 /* 5.2. Menu */
@@ -85,14 +101,31 @@
     flex-direction: column;
     justify-content: center;
 
-    button[type="submit"] {
+    transform: translateX(-90%);
+    opacity: 0;
+    transition: all 2s ease-in;
+
+    &.appear {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.reservation-image {
+    max-height: 90vh;
+    transform: translateX(90%);
+    opacity: 0;
+    transition: all 2s ease-in;
+
+    img {
         display: block;
+        width: auto;
+        max-height: 100%;
         margin: 0 auto;
-        padding: 10px 15px;
-        background-color: $accent-color;
-        border: 1px solid $accent-color;
-        color: $secondary-text-color;
-        font-size: 1.5em;
+    }
+
+    &.appear {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
     /* 5.5. Evenets */
